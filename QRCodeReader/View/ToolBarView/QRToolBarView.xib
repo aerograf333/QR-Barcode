@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRToolBarView" customModule="QRCodeReader" customModuleProvider="target">
+            <connections>
+                <outlet property="QRToolBar" destination="ySp-34-xOT" id="4eu-E7-gK5"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="yak-Z5-yXt"/>
+                <outlet property="history" destination="9Vx-lp-zM9" id="6lB-tq-SgR"/>
+                <outlet property="map" destination="veJ-4f-PBN" id="08I-ct-jqQ"/>
+                <outlet property="quality" destination="b2u-dL-4Uh" id="NlE-v3-yFE"/>
+                <outlet property="scaner" destination="fK3-dO-hr9" id="NmN-Hv-1k7"/>
+                <outlet property="settings" destination="gMx-Kd-SY8" id="EIq-dc-0tp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vz9-7T-2r7">
+                    <rect key="frame" x="153" y="468" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySp-34-xOT" userLabel="QRToolBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="6Xg-0U-wsR"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem image="history" style="plain" id="9Vx-lp-zM9" userLabel="History">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="historyButtonPressed:" destination="-1" id="uEO-AZ-KE9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Qu4-p8-TsL"/>
+                        <barButtonItem image="map" style="plain" id="veJ-4f-PBN">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="mapButtonPressed:" destination="-1" id="dgk-DS-eko"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Nb3-oy-dLg"/>
+                        <barButtonItem image="focus-weak" style="plain" id="fK3-dO-hr9">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="gSM-b9-gH5"/>
+                        <barButtonItem image="star-outline" style="plain" id="b2u-dL-4Uh">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="di6-p0-x8M"/>
+                        <barButtonItem image="settings" style="plain" id="gMx-Kd-SY8">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ySp-34-xOT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LvG-4A-gX1"/>
+                <constraint firstItem="ySp-34-xOT" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="geb-DC-TQm"/>
+                <constraint firstItem="ySp-34-xOT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="k3a-Qa-Zn0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="2879" y="41"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="focus-weak" width="48" height="48"/>
+        <image name="history" width="48" height="48"/>
+        <image name="map" width="48" height="48"/>
+        <image name="settings" width="48" height="48"/>
+        <image name="star-outline" width="48" height="48"/>
+    </resources>
+</document>

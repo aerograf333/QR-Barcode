@@ -1,0 +1,19 @@
+PODS:
+  - BarcodeScanner (3.0.0)
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - Fabric (1.7.2)
+
+DEPENDENCIES:
+  - BarcodeScanner
+  - Crashlytics
+  - Fabric
+
+SPEC CHECKSUMS:
+  BarcodeScanner: 4ba61e8b2d50da7b17685085d4bb8e1a0c14613e
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+
+PODFILE CHECKSUM: d69bdd66329ae412d789e10f13b3a7e1bad20fd2
+
+COCOAPODS: 1.2.1
